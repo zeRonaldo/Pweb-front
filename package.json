@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "dev": "nodemon index.js",
-    "sass": "sass --watch public/assets/scss:public/assets/css"
+    "sass": "sass --watch public/assets/scss:public/assets/css",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
