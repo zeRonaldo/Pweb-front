@@ -1,0 +1,197 @@
+$dark100 : #1f2041;
+$dark75 : #575870;
+$dark50 : #8F8FA0;
+$dark25 : #C7C7CF;
+$dark5 : #F4F4F5;
+$white  : #fff;
+$yellow : #f2c94c;
+$darkyellow: #c59609;
+$blue: #66d2ea;
+$darkblue: #6FC5D6;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap');
+$Quicksand : 'Quicksand', sans-serif;
+$Montserrat : 'Montserrat', sans-serif;
+/*====================================================================
+            TYPOGRAPHY
+=====================================================================*/
+h1 {
+    font-family: $Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+}
+h2 {
+    font-family: $Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+}
+h3 {
+    font-family: $Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+h4 {
+    font-family: $Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+}
+h5 {
+    font-family: $Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+h6 {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+.title{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+
+.yellow{
+    color: $darkyellow !important
+}
+.blue{
+    color: $darkblue !important
+}
+.white{
+    color: $white !important
+}
+.center{
+    text-align: center;
+}
+/*====================================================================
+            HEADER
+=====================================================================*/
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background-color: $white;
+    box-shadow: 0 10px 20px $dark5;
+}
+.uk-navbar-left .uk-logo > img{
+    max-width: 155px;
+    width: 100%;
+}
+.uk-navbar-nav li{
+    align-self: center
+}
+/*====================================================================
+            INDEX
+=====================================================================*/
+#jumbo{
+   
+    .uk-slideshow-items{
+        max-height: 600px;
+        min-height: 700px!important;
+        li:first-child {
+            background-color: $darkyellow;
+        }
+        li:nth-child(2){
+            background-color: $darkblue
+        }
+    }
+    .uk-slidenav svg{
+        width: 30px
+    }
+}
+.feature-container{
+    flex: 1;
+    justify-content: center;
+    .feature-items{
+        width: 300px;
+        height: 340px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        h4, p{
+            text-align: center;
+            font-size: 19px;
+        }
+        p{
+            font-weight: lighter;
+        }
+    }
+}
+.feature-icons{
+    max-height: 150px;
+    margin-bottom: 20px 
+}
+.bg-blue-grad{
+background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
+}
+.clients{
+    flex: 1;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 100%;
+}
+.client-item{
+    max-width: 430px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+/*====================================================================
+            FORM AND BUTTONS
+=====================================================================*/
+.uk-button{
+    margin: 0 10px;
+}
+.uk-button-primary {
+    background-color: $darkyellow;
+    border-radius: 22px;
+    color:$white!important;
+    text-transform: uppercase;
+    min-height: 1em!important;
+
+    &:hover{
+        background-color: $yellow
+    }
+}
+.uk-button-primary-outline {
+    background-color: transparent;
+    color: $darkyellow !important;
+    border: 2px solid $darkyellow;
+    border-radius: 22px;
+    text-transform: uppercase;
+    min-height: 1em!important;
+    
+    &:hover{
+        background-color: $yellow;
+        color: $white!important;
+        border: 2px solid $yellow
+
+    }
+
+}
+
+img{
+    object-fit: cover; 
+}
+.user-thumb-pic{
+    height: 40px;
+}
+.user-mthumb-pic{
+    height: 64px;
+    width: 64px;
+}
+.user-big-pic{
+    height: 240px
+}
