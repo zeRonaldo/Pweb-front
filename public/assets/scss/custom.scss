@@ -9,8 +9,20 @@ $darkyellow: #c59609;
 $blue: #66d2ea;
 $darkblue: #6FC5D6;
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 $Quicksand : 'Quicksand', sans-serif;
 $Montserrat : 'Montserrat', sans-serif;
+
+
+
+html, body{
+    height: 100%;
+    flex: 1;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+}
 /*====================================================================
             TYPOGRAPHY
 =====================================================================*/
@@ -151,6 +163,9 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
 /*====================================================================
             FORM AND BUTTONS
 =====================================================================*/
+.uk-input{
+    border-radius: 5px;
+}
 .uk-button{
     margin: 0 10px;
 }
@@ -181,7 +196,158 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
     }
 
 }
+#fullpage-form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    background-color: #fefefe;
+    .container{
+        width: 600px;
+        .uk-card{
+            height: 700px;
+            
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            &>div:nth-child(2){
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            &>div:last-child{
+                align-self: center
+            }
+            .uk-logo{
+               
+                img{
+                    height: 90px; 
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.register {
+    .uk-logo >img{
+        height: 60px!important;
+    }
+    #msform {
+        width: 100%;
+        position: relative;
+      }
+      
+      #msform fieldset {
+        background: white;
+        border: 0 none;
+        box-sizing: border-box;
+        /*stacking fieldsets above each other*/
+        position: relative;
+      }
+      
+      
+      /*Hide all except first fieldset*/
+      
+      #msform fieldset:not(:first-of-type) {
+        display: none;
+      }
+      
+      
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    font-family: $Quicksand;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+  }
+  
+  #progressbar ul {
+    padding-left:0px !important;
+  }
+  
+  #progressbar li {
+    list-style-type: none;
+    font-size: 19px;
+    width: 33%;
+    float: left;
+    position: relative;
+    text-align: center;
+    &:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 44px;
+        line-height: 44px;
+        display: block;
+        font-size: 19px;
+        color: $dark50;
+        background: white;
+        border-radius: 45px;
+        border: 1px solid $dark50;
+        margin: 0 auto 5px auto;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $dark50;
+        position: absolute;
+        left: -50%;
+        top: 9px;
+        z-index: -1;
+        /*put it behind the numbers*/
+    }
+}
 
+  #progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+  }
+  
+  
+  /*marking active/completed steps green*/
+  
+  
+  /*The number of the step and the connector before it = green*/
+  
+  #progressbar li.active:before,
+  #progressbar li.active:after,
+  #progressbar li.active {
+    font-weight: bold;
+  }
+  
+  #progressbar li.done:before{
+    content: "done";
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    background: $darkyellow;
+  }
+  #progressbar li.done:after{
+    background: $darkyellow;
+  }
+}
+.uk-tab::before{
+    border-bottom: none;
+}
+.uk-tab>* {
+    min-width: 130px;
+    font-family: $Quicksand;
+    font-style: normal;
+    font-weight: normal;
+}
+.uk-tab>.uk-active>a {
+    color: $dark100;
+    border-color: $yellow;
+
+    font-weight: bold;
+}
+/*====================================================================
+           IMAGES
+=====================================================================*/
 img{
     object-fit: cover; 
 }
@@ -195,3 +361,4 @@ img{
 .user-big-pic{
     height: 240px
 }
+

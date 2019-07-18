@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SimpleEvents</title>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="/assets/css/uikit.min.css" />
+<link rel="stylesheet" href="/assets/css/custom.css" />
+
+<!-- UIkit JS -->
+<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+<script src="/assets/js/uikit.min.js"></script>
+<script src="/assets/js/uikit-icons.min.js"></script>
+</head>
+<body>
+    <section id="fullpage-form" class="register">
+	
+        <div class="container">
+                <div class="uk-clearfix">
+                    <button class="uk-close-large uk-align-right" type="button" uk-close></button>
+                </div>
+                
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div >
+                        <div>
+                            <ul class="uk-flex-center" uk-tab>
+                                <li class="uk-active"><a href="/register">Login</a></li>
+                                <li><a href="/register">Cadastro</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="uk-light">
+                            <a class="uk-logo" href="">
+                                <img src="/assets/img/bicoscom.png" alt="">
+                            </a>
+                        </div>
+
+
+                        <form class="uk-form-stacked"  id="msform">
+                                <ul id="progressbar">
+                                        <li class="active">Usuário</li>
+                                        <li>Dados Pessoais</li>
+                                        <li>Perfil</li>
+                                </ul>
+                        <div >
+                            <div>
+                                <fieldset class="part1">
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Usuário</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="ex: joao_S...">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Senha</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="password" placeholder="Senha com 6 ou mais caractéres...">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Confirme a Senha</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="password" placeholder="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Email</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="email" placeholder="joao@silva.com">
+                                            </div>
+                                        </div>
+                                        <input type="button" name="next" class="uk-button uk-button-primary uk-align-center next" value="Próximo" />
+
+                                </fieldset>
+                                
+                                <fieldset class="part2">
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Nome Completo</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="ex: João Silva...">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Documento de Identificação</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="RG, CPF ou outro documento válido...">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Data de Nascimento</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="dd/mm/aaaa" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Telefone para Contato</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="(XX) 9XXXX - XXXX">
+                                            </div>
+                                        </div>
+                                        <input type="button" name="previous" class="uk-button uk-button-primary uk-align-center previous" value="Voltar" />
+                                        <input type="button" name="next" class="uk-button uk-button-primary uk-align-center next" value="Próximo" />
+                                </fieldset>
+
+                                <fieldset class="part3">
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Imagem</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="link pra sua imagem de perfil">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Bio</label>
+                                            <div class="uk-form-controls">
+                                                <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div >
+                                                <input type="button" name="previous" class="uk-button uk-button-primary uk-align-center previous" value="Voltar" />
+                                                <input type="submit" name="submit" class="uk-button uk-button-primary uk-align-center submit" value="Finalizar" />
+                                        </div>
+                                </fieldset>
+                   
+                    </form>
+                </div>
+                
+        </div>
+        </section>
+        <script src="/assets/js/multipartform.js"></script>
+</body>
+</html>
