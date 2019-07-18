@@ -293,9 +293,9 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
         height: 2px;
         background: $dark50;
         position: absolute;
-        left: -50%;
-        top: 9px;
-        z-index: -1;
+        left: -35%;
+        top: 20px;
+        z-index: -2;
         /*put it behind the numbers*/
     }
 }
@@ -325,9 +325,24 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
     font-size: 24px;
     line-height: 20px;
     background: $darkyellow;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    border: 1px solid $darkyellow;
   }
   #progressbar li.done:after{
     background: $darkyellow;
+  }
+  .register-buttons{
+      width: 100%;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-around;
   }
 }
 .uk-tab::before{

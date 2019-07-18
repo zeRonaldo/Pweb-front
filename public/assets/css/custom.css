@@ -287,9 +287,9 @@ h6 {
   height: 2px;
   background: #8F8FA0;
   position: absolute;
-  left: -50%;
-  top: 9px;
-  z-index: -1;
+  left: -35%;
+  top: 20px;
+  z-index: -2;
   /*put it behind the numbers*/
 }
 .register #progressbar li:first-child:after {
@@ -309,9 +309,24 @@ h6 {
   font-size: 24px;
   line-height: 20px;
   background: #c59609;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid #c59609;
 }
 .register #progressbar li.done:after {
   background: #c59609;
+}
+.register .register-buttons {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
 }
 
 .uk-tab::before {
