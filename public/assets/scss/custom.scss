@@ -40,7 +40,7 @@ h2 {
     font-size: 32px;
     line-height: 40px;
 }
-h3 {
+h3, .h3 {
     font-family: $Quicksand;
     font-style: normal;
     font-weight: bold;
@@ -86,20 +86,32 @@ h6 {
 .center{
     text-align: center;
 }
+.icons{
+    font-family: 'Material Icons'
+}
 /*====================================================================
             HEADER
 =====================================================================*/
-.uk-navbar-container:not(.uk-navbar-transparent){
+header{
     background-color: $white;
     box-shadow: 0 10px 20px $dark5;
 }
-.uk-navbar-left .uk-logo > img{
+.uk-navbar .uk-logo > img{
     max-width: 155px;
     width: 100%;
 }
 .uk-navbar-nav li{
     align-self: center
 }
+nav.uk-navbar .uk-navbar-center{
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    .uk-search{
+        width: 100%
+    }
+}
+
 /*====================================================================
             INDEX
 =====================================================================*/
@@ -206,10 +218,17 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
         width: 600px;
         .uk-card{
             height: 700px;
-            
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .uk-alert {
+                position: absolute;
+                z-index: 99;
+                opacity: .8;
+                width: 70%;
+                align-self: center;
+                top: 75px;
+            }
             &>div:nth-child(2){
                 height: 100%;
                 display: flex;
@@ -230,7 +249,7 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
         }
     }
 }
-.register {
+.register, .new-event {
     .uk-logo >img{
         height: 60px!important;
     }
@@ -344,6 +363,44 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
       display: flex;
       justify-content: space-around;
   }
+}
+.new-event{
+    .container{
+        width: 100%!important;
+        max-width: 900px;
+        .content{
+            width: 100%;
+        }
+        .inline-flex{
+            display: inline-flex;
+            width: 100%;
+            .uk-margin{
+                max-width: 410px;
+                width: 100%;
+                padding: 0 20px;
+                label{
+                    margin-top: 25px;
+                    .sub-label{
+                        float: right;
+                        font-weight: normal;
+                        color: $dark50;
+                    }
+                }
+            }
+        }
+        .vaga-item{
+            justify-content: space-evenly;
+            align-content: center;
+            display: flex;
+        }
+    }
+}
+    
+label{
+    font-family: $Montserrat;
+    font-weight: bold;
+    color: $dark100;
+    font-size: 12px;
 }
 .uk-tab::before{
     border-bottom: none;

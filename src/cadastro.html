@@ -31,6 +31,19 @@
                         </div>
                     </div>
                     <div >
+                            <div uk-alert class="uk-alert-danger fail" hidden>
+                                    <span>Senha incorreta</span>
+                                    <a class="uk-alert-close" uk-close></a>
+                            </div>
+                            <div uk-alert class="uk-alert-warning warn" hidden>
+                                    <span>Senha incorreta</span>
+                                    <a class="uk-alert-close" uk-close></a>
+                            </div>
+                            <div uk-alert class="uk-alert-primary info" hidden>
+                                    <span>Senha incorreta</span>
+                                    <a class="uk-alert-close" uk-close></a>
+                            </div>
+
                         <div class="uk-light">
                             <a class="uk-logo" href="">
                                 <img src="/assets/img/bicoscom.png" alt="">
@@ -48,30 +61,30 @@
                             <div>
                                 <fieldset class="part1">
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Usuário</label>
+                                            <label class="uk-form-label" for="user">Usuário</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="ex: joao_S...">
+                                                <input class="uk-input" id="user" name="user" type="text" placeholder="ex: joao_S...">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Senha</label>
+                                            <label class="uk-form-label" for="password">Senha</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="password" placeholder="Senha com 6 ou mais caractéres...">
+                                                <input class="uk-input" id="password" name="password" type="password" placeholder="Senha com 6 ou mais caractéres...">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Confirme a Senha</label>
+                                            <label class="uk-form-label" for="password2">Confirme a Senha</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="password" placeholder="">
+                                                <input class="uk-input" id="password2" name="password2" type="password" placeholder="">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Email</label>
+                                            <label class="uk-form-label" for="mail">Email</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="email" placeholder="joao@silva.com">
+                                                <input class="uk-input" id="mail" name="mail" type="email" placeholder="joao@silva.com">
                                             </div>
                                         </div>
                                         <div class="register-buttons">
@@ -82,30 +95,30 @@
                                 
                                 <fieldset class="part2">
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Nome Completo</label>
+                                            <label class="uk-form-label" for="fullname">Nome Completo</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="ex: João Silva...">
+                                                <input class="uk-input" id="fullname" name="fullname" type="text" placeholder="ex: João Silva...">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Documento de Identificação</label>
+                                            <label class="uk-form-label" for="document">Documento de Identificação</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="RG, CPF ou outro documento válido...">
+                                                <input class="uk-input" id="document" name="document" type="text" placeholder="RG, CPF ou outro documento válido...">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Data de Nascimento</label>
+                                            <label class="uk-form-label" for="date">Data de Nascimento</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="dd/mm/aaaa" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                                                <input class="uk-input" id="date" name="date" type="date" placeholder="dd/mm/aaaa" data-uk-datepicker="{format:'DD.MM.YYYY'}">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Telefone para Contato</label>
+                                            <label class="uk-form-label" for="tel">Telefone para Contato</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="(XX) 9XXXX - XXXX">
+                                                <input class="uk-input" id="tel" name="tel" type="text" placeholder="(XX) 9XXXX - XXXX">
                                             </div>
                                         </div>
                                         <div class="register-buttons">
@@ -117,16 +130,16 @@
 
                                 <fieldset class="part3">
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Imagem</label>
+                                            <label class="uk-form-label" for="image">Imagem</label>
                                             <div class="uk-form-controls">
-                                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="link pra sua imagem de perfil">
+                                                <input class="uk-input" id="image" type="text" placeholder="link pra sua imagem de perfil">
                                             </div>
                                         </div>
                                         
                                         <div class="uk-margin">
-                                            <label class="uk-form-label" for="form-stacked-text">Bio</label>
+                                            <label class="uk-form-label" for="bio">Bio</label>
                                             <div class="uk-form-controls">
-                                                <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                                <textarea class="uk-textarea" name="bio" rows="5" placeholder="Fale sobre você..."></textarea>
                                             </div>
                                         </div>
                                         <div class="register-buttons">

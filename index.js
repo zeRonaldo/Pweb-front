@@ -17,7 +17,7 @@ app.get('/register', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/cadastro.html'));
 });
 app.get('/home', function(req, res) {
-    res.sendFile(path.join(__dirname + '/src/home.html'));
+    res.sendFile(path.join(__dirname + '/src/header.html'));
 });
 app.get('/user', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/usuario.html'));
