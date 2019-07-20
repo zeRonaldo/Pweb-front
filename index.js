@@ -16,7 +16,7 @@ app.get('/login', function(req, res) {
 app.get('/register', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/cadastro.html'));
 });
-app.get('/home', function(req, res) {
+app.get('/header', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/header.html'));
 });
 app.get('/user', function(req, res) {
@@ -31,5 +31,7 @@ app.get('/search', function(req, res) {
 app.get('/new', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/criarevento.html'));
 });
-
+app.get('/footer', function(req, res) {
+    res.sendFile(path.join(__dirname + '/src/footer.html'));
+});
 app.listen(port);

@@ -426,4 +426,12 @@ img {
   height: 240px;
 }
 
+/*====================================================================
+           FOOTER
+=====================================================================*/
+footer {
+  background-color: #c59609;
+  color: white !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
