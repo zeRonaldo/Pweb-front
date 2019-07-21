@@ -365,6 +365,10 @@ background: linear-gradient(214.92deg, #6FC5D6 24.51%, #99EEFF 67.7%);
   }
 }
 .new-event{
+    #progressbar{
+        display: flex;
+        justify-content: center;
+    }
     .container{
         width: 100%!important;
         max-width: 900px;

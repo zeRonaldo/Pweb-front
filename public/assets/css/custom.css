@@ -352,6 +352,10 @@ nav.uk-navbar .uk-navbar-center .uk-search {
   justify-content: space-around;
 }
 
+.new-event #progressbar {
+  display: flex;
+  justify-content: center;
+}
 .new-event .container {
   width: 100% !important;
   max-width: 900px;
