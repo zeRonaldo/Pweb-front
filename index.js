@@ -34,4 +34,7 @@ app.get('/new', function(req, res) {
 app.get('/footer', function(req, res) {
     res.sendFile(path.join(__dirname + '/src/footer.html'));
 });
+app.get('/cardvnl', function(req, res) {
+    res.sendFile(path.join(__dirname + '/src/card-vaga-nao-logado.html'));
+});
 app.listen(port);

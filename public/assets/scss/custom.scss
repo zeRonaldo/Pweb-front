@@ -92,7 +92,7 @@ h6 {
 /*====================================================================
             HEADER
 =====================================================================*/
-header{
+header#navbar{
     background-color: $white;
     box-shadow: 0 10px 20px $dark5;
 }
@@ -425,6 +425,7 @@ img{
 }
 .user-thumb-pic{
     height: 40px;
+    width: 40px;
 }
 .user-mthumb-pic{
     height: 64px;
@@ -439,7 +440,123 @@ img{
 /*====================================================================
            FOOTER
 =====================================================================*/
-footer{
+footer#general-footer{
     background-color: $darkyellow;
     color: white!important;
+}
+
+
+/*====================================================================
+           USER
+=====================================================================*/
+#user-info{
+    h4{
+        margin: 0;
+        color: $dark50
+    }
+}
+.user-pic-container{
+    display: flex;
+    align-items: center;
+}
+.status{
+    padding: 20px;
+    div h5{
+        margin:5px;
+        max-width: 100%;
+        span{
+            font-weight: normal;
+            float: right;
+        }
+    }
+}
+.comment-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .comment{
+        width: 70%;
+    }
+    .rating-container{
+        padding:10px;
+        display: flex;
+        align-items: center;
+    }
+    .rating-type-icon{
+        width: 32px;
+        height: 32px;
+        margin-right: 10px
+    }
+    .icons{
+        font-size: 18px
+    }
+}
+
+/*====================================================================
+           vagas
+=====================================================================*/
+.vaga-item-card{
+    max-width: 200px;
+    .uk-card-header{
+        h4{
+            margin: 5px;
+        }
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .uk-width-auto{
+            padding-left: 10px
+        }
+        span{
+            font-size: 12px;
+            color: $dark50;
+        }
+    }
+    .uk-card-body{
+        padding:20px;
+        
+        h4{
+            font-size: 14px;
+            text-align: center;
+            margin: 0;
+        }
+        .uk-button-primary-outline{
+            margin: 0 auto;
+            width: 100%;
+            font-size: 12px;
+            padding: 2px 16px;
+            border-color: $darkblue;
+            color: $darkblue!important;
+            &:hover{
+                background-color: $blue;
+                border-color: $blue;
+                color: $white!important;
+            }
+        }
+    }
+    .uk-card-footer div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            font-size: 12px;
+            padding-right: 10px
+        }
+        .icons{
+            font-size: 16px
+        }
+    }
+    .status h4{
+        font-size: 18px;
+        color: $dark50;
+        display: flex;
+        justify-content: center;
+        span{
+            font-size: 32px;
+            padding-right: 10px
+        }
+    }
 }
